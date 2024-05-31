@@ -16,12 +16,11 @@ pickup_date = columns0[0].date_input(
 
 pickup_time = columns0[1].time_input('Pickup Time', datetime.time(18, 45))
 
-columns1 = st.columns(5)
-pickup_latitude = columns1[0].number_input('Pickup Latitude', 40.764569101446575)
-pickup_longitude = columns1[1].number_input('Pickup Longitude', -73.98840341229014)
-columns1[2].empty()
-dropoff_latitude = columns1[3].number_input('Dropoff Latitude', 40.70624710299581)
-dropoff_longitude = columns1[4].number_input('Dropoff Longitude', -74.00470186577985)
+columns1 = st.columns(4)
+pickup_latitude = columns1[0].number_input('Pickup Latitude', 40.764569101446575, format="%.10f")
+pickup_longitude = columns1[1].number_input('Pickup Longitude', -73.98840341229014, format="%.10f")
+dropoff_latitude = columns1[2].number_input('Dropoff Latitude', 40.70624710299581, format="%.10f")
+dropoff_longitude = columns1[3].number_input('Dropoff Longitude', -74.00470186577985, format="%.10f")
 
 passenger_count = st.slider('Passenger Count', 1, 10, 3)
 
