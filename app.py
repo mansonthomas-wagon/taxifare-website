@@ -47,7 +47,7 @@ if columns2[2].button('Estimate the fare price'):
     st.balloons()
 
     st.text("""
-&nbsp;    
+...    
                    [\\
               .----' `-----.
              //^^^^;;^^^^^^`\\
