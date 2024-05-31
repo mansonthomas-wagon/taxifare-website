@@ -45,7 +45,7 @@ if columns2[2].button('Estimate the fare price'):
     st.success(f"Fare price is : {response.json()['fare']}")
 
     st.balloons()
-
+    st.snow()
     st.text("""
 ...    
                    [\\
